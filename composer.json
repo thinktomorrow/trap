@@ -1,0 +1,49 @@
+{
+    "name": "thinktomorrow/trap",
+    "description": "A dump helper with extra functionality",
+    "keywords": [
+        "think tomorrow",
+        "trap",
+        "vardump",
+        "dd"
+    ],
+    "homepage": "https://github.com/thinktomorrow/trap",
+    "license": "MIT",
+    "authors": [
+    ],
+    "require": {
+        "php": "^7.2",
+        "laravel/framework": "~5.8.4|^6.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "orchestra/testbench": "~3.8.0|^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Thinktomorrow\\Trap\\": "src"
+        },
+        "files": [
+            "src/trap.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Thinktomorrow\\Trap\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Thinktomorrow\\Trap\\TrapServiceProvider"
+            ]
+        }
+    }
+}
