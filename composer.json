@@ -42,7 +42,6 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Thinktomorrow\\Trap\\TrapServiceProvider"
             ]
         }
     }
